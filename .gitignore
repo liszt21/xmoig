@@ -1,3 +1,7 @@
-*.x86_64-linux
 .stack-work
 stack.yaml.lock
+
+// builds
+build*
+*.errors
+xmonad-*
