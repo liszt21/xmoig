@@ -1,0 +1,2 @@
+packages: ./grask-xmonad.cabal
+constraints: xmobar +all_extensions +with_rtsopts +with_threaded

@@ -1,1 +1,4 @@
 #+TITLE: My Graphical Desktop Configuration
+
+* Reference 
+[[https://github.com/jsoo1/dotfiles][John soo's dotfiles]]
