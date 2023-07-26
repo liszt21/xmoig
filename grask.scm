@@ -1,4 +1,4 @@
-(define-module (grask))
+(define-module (grask)
  #:use-module (gnu packages wm)
  #:use-module (gnu packages haskell-xyz)
  #:use-module (gnu packages xorg)
@@ -11,7 +11,7 @@
  #:use-module (ice-9 regex))
 
 (define %local
-  (local-file (dirname (current-filename))
+  (local-file (string-append (dirname (current-filename)) "/config/xmonad")
               #:recursive? #t
               #:select?
               (lambda (f _)
@@ -19,8 +19,6 @@
                  (or (string-match "\\.ghc\\.environment" f)
                      (string-match "dist" f)
                      (string-match "dist-newstyle" f))))))
-
-(display %local)
 
 (define-public grask-xmonad
   (package
