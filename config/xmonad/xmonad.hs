@@ -77,7 +77,7 @@ myLayout =
 myStartupHook = do
   -- spawnOnce "tmux new -d -s xmonad-startup -n main sh ~/Dotfiles/config/startup.sh"
   -- spawnOnce "xautolock -time 6 -locker \"betterlockscreen -l\""
-  spawnOnce "picom --config ~/Dotfiles/config/picom/picom.conf"
+  spawnOnce "picom --config ~/Dotfiles/module/grask/config/picom/picom.conf"
   -- spawnOnce "polybar --config=~/Dotfiles/config/polybar/polybar"
 
 myManageHook :: ManageHook

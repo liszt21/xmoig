@@ -5,3 +5,4 @@ stack.yaml.lock
 build*
 *.errors
 xmonad-*
+dist-newstyle
