@@ -24,11 +24,12 @@ main =
 
 myWorkspaces :: [String]
 myWorkspaces =
-  [ "☰",
+  [
+    "☯",
+    "☰",
     "☱",
     "☲",
     "☳",
-    "☯",
     "☴",
     "☵",
     "☶",
@@ -98,7 +99,8 @@ myConfig =
       terminal = "alacritty",
       borderWidth = 1
     }
-    `additionalKeysP` [ ("M-S-z", spawn "xscreensaver-command -lock"),
+    `additionalKeysP` [
+                        ("M-S-z", spawn "xscreensaver-command -lock"),
                         ("M-S-=", unGrab *> spawn "scrot -s"),
                         ("M-]", spawn "firefox"),
                         ("M-s", spawn "flameshot gui"),

@@ -4,5 +4,5 @@ stack.yaml.lock
 // builds
 build*
 *.errors
-xmonad-*
+xmonad*
 dist-newstyle
